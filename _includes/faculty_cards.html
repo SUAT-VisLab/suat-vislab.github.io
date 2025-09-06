@@ -1,6 +1,6 @@
 {%- for faculties in include.faculty %}
 <div class="person-container">
-  <div class="person-image"><img src="assets/images/avatars/{{ faculties.name | replace: ' ', '' }}.jpg" width="100" /></div>
+  <div class="person-image"><img src="assets/images/avatars/{{ faculties.name | replace: ' ', '' | replace: '.', '' }}.jpg" width="100" /></div>
   <div>
     {%- if faculties.homepage %}
     <a class="urllink" href="{{ faculties.homepage }}" rel="nofollow">{{ faculties.name }}</a>
